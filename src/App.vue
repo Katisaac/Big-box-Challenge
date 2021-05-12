@@ -1,19 +1,20 @@
 <template>
-  <div id="app">
+  <main id="app">
     <div class="navbar">
-      <Books />
+      <div class="container">
+        <div  iv class="card">
+          <router-view />
+        </div>
+      </div>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
-import Books from "./components/Books.vue";
 
 export default {
   name: "app",
-  components: {
-    Books
-  }
+  
 };
 </script>
 
@@ -21,11 +22,22 @@ export default {
 @import "./styles/main.scss";
 
 .navbar {
-  background-color: orange;
+  background-color:  #ff9000;
   width: 100%;
-  height: 96px;
+  height: 9.6rem;
   position: absolute;
   z-index: 0;
 }
+.container {
+  z-index: 1;
+  margin: 4rem auto;
+  max-width: 82.6rem;
+  background-color: white;
+}
 
+.card {
+  border: 0.1rem solid #dc5c05;
+  box-shadow: 0 0.2rem 0.3rem rgba(151, 139, 125, 0.1), 0 0 0 1px rgba(151, 139, 125, 0.1);
+  padding: 2.4rem;
+}
 </style>
