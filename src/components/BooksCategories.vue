@@ -48,11 +48,10 @@ export default {
   font-weight: 800;
 }
 .content__list{
-  background-color: #ff9000;
-  // faab31 amarillo hover
+  background: linear-gradient(to top, rgba(220, 92, 5, 1) 0%, rgba(255, 144, 0, 1) 100%);
   padding: 1.5rem;
   border-radius: 1rem;
-  display: flex;
+  // display: flex;
   flex-wrap: wrap;
 }
 .content__list-item{
@@ -60,26 +59,23 @@ export default {
   text-decoration: none;
   font-size: 1.8rem;
   line-height: 2;
-  color: black;
   padding: 0.5rem;
   border-radius: 0.5rem;
+  color: black;
 }
 li{
-  flex-grow: 2;
   background-color: #dc5c05;
   border-radius: 0.5rem;
   text-align: center;
   margin: 0.2rem;
   border: 0.2rem solid black;
+  flex-grow: 2;
 }
 li:nth-child(odd){
   background-color: white;
-  border-radius: 0.5rem;
 }
-// li:nth-child(3n){
-//   background-color: #6ec5b8;
-//   border-radius: 5px;
-
-// }
+li:hover{
+    background-color: #faab31;
+}
 
 </style>

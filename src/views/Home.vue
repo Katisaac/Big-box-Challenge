@@ -1,6 +1,6 @@
 <template>
   <div>
-      <ring-loader :loading="isLoading" :color="'red'" :size="200"/>
+      <ring-loader class="loader" :loading="isLoading" :color="'#ff9000'" :size="200"/>
       <books-categories v-if="!isLoading" :booksCategories="booksCategories" />
   </div>
 </template>
@@ -33,3 +33,9 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.loader{
+  margin: 7.5rem auto;
+}
+</style>

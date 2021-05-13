@@ -22,7 +22,7 @@ export default {
 @import "./styles/main.scss";
 
 .navbar {
-  background-color:  #ff9000;
+  background: linear-gradient(to bottom, rgba(220, 92, 5, 1) 0%, rgba(255, 144, 0, 1) 100%);
   width: 100%;
   height: 9.6rem;
   position: absolute;
@@ -36,6 +36,7 @@ export default {
 }
 
 .card {
+  min-height: 40rem;
   border: 0.1rem solid #dc5c05;
   box-shadow: 0 0.2rem 0.3rem rgba(151, 139, 125, 0.1), 0 0 0 1px rgba(151, 139, 125, 0.1);
   padding: 2.4rem;
