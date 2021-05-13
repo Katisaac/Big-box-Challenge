@@ -3,6 +3,9 @@
     <px-header />
 
     <div class="content">
+      <blockquote>
+      <p>“An author writes only half the book. The rest is written by readers.”<cite>― Joseph Conrad</cite></p>
+      </blockquote>
       <h2 class="content__title">Categories</h2>
       <ul class="content__list" >
           <li v-for="book in booksCategories" :key="book.list_name_encoded"> 
@@ -41,19 +44,30 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.content{
+  background: linear-gradient(to top, rgba(220, 92, 5, 1) 0%, rgba(255, 144, 0, 1) 100%);
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+blockquote  p  {
+font-size: 2rem;
+color: #333;
+}
+blockquote p cite  {
+color:#666;
+font-size: 1.8rem;
+display:block;
+text-align:right;
+}
 .content__title{
   margin: 1.5rem auto;
   text-align: center;
   font-size: 2rem;
   font-weight: 800;
+  color: #333;
+
 }
-.content__list{
-  background: linear-gradient(to top, rgba(220, 92, 5, 1) 0%, rgba(255, 144, 0, 1) 100%);
-  padding: 1.5rem;
-  border-radius: 1rem;
-  // display: flex;
-  flex-wrap: wrap;
-}
+
 .content__list-item{
   font-weight: 500;
   text-decoration: none;
